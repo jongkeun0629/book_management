@@ -25,8 +25,12 @@ public class BookService {
         return bookRepository.save(book);
     }
 
+    // id 값이 없으면 생성, 있으면 수정
     public Book update(Integer id, Book book){
-        return bookRepository.update(id, book);
+        getById(id);
+        book.setId(id);
+
+        return bookRepository.save(book);
     }
 
     public void delete(Integer id){
