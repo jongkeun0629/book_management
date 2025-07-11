@@ -1,4 +1,4 @@
-package com.jongkeun.book_management.Controller;
+package com.jongkeun.book_management.controller;
 
 import com.jongkeun.book_management.dto.AuthorDto;
 import com.jongkeun.book_management.model.Author;
